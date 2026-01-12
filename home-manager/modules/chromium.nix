@@ -1,15 +1,26 @@
-{
+{ pkgs, ... }: {
   programs.chromium = {
     enable = true;
+    package = pkgs.brave;
     extensions = [
-      # Dark Reader
-      { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
+      # Vimium
+      { id = "dbepggeogbaibhgnhhndojpepiihcmeb"; }
 
-      # Unhook - Remove YouTube Recommended & Shorts
-      { id = "khncfooichmfjbepaaaebmommgaepoid"; }
+      # Return YouTube Dislike
+      { id = "gebbhagfogifgggkldgodflihgfeippi"; }
 
-      # FireShot
-      { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
+      # LastPass
+      { id = "hdokiejnpimakedhajhdlcegeplioahd"; }
     ];
+   #extensions = [
+   #  # Dark Reader
+   #  { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
+
+   #  # Unhook - Remove YouTube Recommended & Shorts
+   #  { id = "khncfooichmfjbepaaaebmommgaepoid"; }
+
+   #  # FireShot
+   #  { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
+   # ];
   };
 }

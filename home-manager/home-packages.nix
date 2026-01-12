@@ -6,11 +6,10 @@
 
     # Desktop apps
     anki
-    code-cursor
+    # code-cursor
     imv
     mpv
-    obs-studio
-    obsidian
+    #obs-studio
     pavucontrol
     #teams-for-linux
     #telegram-desktop
@@ -19,7 +18,7 @@
     # CLI utils
     bc
     bottom
-    brightnessctl
+    #brightnessctl
     cliphist
     ffmpeg
     ffmpegthumbnailer

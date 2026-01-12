@@ -1,3 +1,3 @@
 {
-  time.timeZone = "Asia/Tashkent";
+  time.timeZone = "America/New_York";
 }
