@@ -11,16 +11,12 @@
 
       # LastPass
       { id = "hdokiejnpimakedhajhdlcegeplioahd"; }
+
+      # Hover Zoom+
+      { id = "pccckmaobkjjboncdfnnofkonhgpceea"; }
+
+      # Video Speed Controller
+      { id = "nffaoalbilbmmfgbnbgppjihopabppdk"; }
     ];
-   #extensions = [
-   #  # Dark Reader
-   #  { id = "eimadpbcbfnmbkopoojfekhnkhdbieeh"; }
-
-   #  # Unhook - Remove YouTube Recommended & Shorts
-   #  { id = "khncfooichmfjbepaaaebmommgaepoid"; }
-
-   #  # FireShot
-   #  { id = "mcbpblocgmgfnpjjppndjkmgjaogfceg"; }
-   # ];
   };
 }
