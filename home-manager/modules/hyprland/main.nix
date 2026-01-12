@@ -13,7 +13,7 @@
         "XDG_SCREENSHOTS_DIR,$HOME/screens"
       ];
 
-      monitor = ",1920x1080@60,auto,1";
+      monitor = ",2560x1440@144,auto,1";
       "$mainMod" = "SUPER";
       "$terminal" = "alacritty";
       "$fileManager" = "$terminal -e sh -c 'ranger'";
@@ -64,11 +64,11 @@
         kb_options = "grp:caps_toggle";
       };
 
-      gestures = {
-        workspace_swipe = true;
-        workspace_swipe_invert = false;
-        workspace_swipe_forever	= true;
-      };
+      #gestures = {
+      #  workspace_swipe = true;
+      #  workspace_swipe_invert = false;
+      #  workspace_swipe_forever	= true;
+      #};
 
       dwindle = {
         pseudotile = true;

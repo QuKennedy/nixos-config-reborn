@@ -12,8 +12,8 @@
     obs-studio
     obsidian
     pavucontrol
-    teams-for-linux
-    telegram-desktop
+    #teams-for-linux
+    #telegram-desktop
     vesktop
 
     # CLI utils
@@ -46,12 +46,12 @@
     zip
 
     # Coding stuff
-    openjdk23
-    nodejs
-    python311
+    #openjdk23
+    #nodejs
+    #python311
 
     # WM stuff
-    libsForQt5.xwaylandvideobridge
+    #libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
