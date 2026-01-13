@@ -13,6 +13,7 @@
         lss = "ls -lhA --color";
         top = "htop";
 	vrc = "nvim ${modulesDir}/zsh.nix";
+	vm = "nvim ${modulesDir}";
 
         sw = "nh os switch";
         upd = "nh os switch --update";
