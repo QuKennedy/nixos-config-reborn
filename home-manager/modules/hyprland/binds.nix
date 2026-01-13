@@ -30,6 +30,7 @@ in {
       # "$mainMod,       E, exec, bemoji -cn"
       "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
       "$mainMod,       B, exec, brave"
+      "$mainMod SHIFT, B, exec, pkill -SIGUSR2 waybar"
       # "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
       # "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
       "$mainMod SHIFT, X, exec, loginctl lock-session"

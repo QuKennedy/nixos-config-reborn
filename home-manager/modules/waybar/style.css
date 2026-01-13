@@ -24,15 +24,21 @@ window#waybar {
   background: #d65d0e;
 }
 
-#clock, #battery, #pulseaudio, #tray, #language, #weather {
+#cpu, #memory, #clock, #battery, #pulseaudio, #tray, #language, #weather {
   padding: 0 10px;
   margin: 0 10px;
 }
 
-#language {
+#cpu {
   margin: 0;
   color: #d79921;
   border-bottom: 5px solid #d79921;
+}
+
+#memory {
+  margin: 0;
+  color: #458588;
+  border-bottom: 5px solid #458588;
 }
 
 #custom-weather {
@@ -53,11 +59,6 @@ window#waybar {
   border-bottom: 5px solid #cc241d;
 }
 
-#battery {
-  margin: 0;
-  color: #458588;
-  border-bottom: 5px solid #458588;
-}
 
 #clock {
   margin: 0;
