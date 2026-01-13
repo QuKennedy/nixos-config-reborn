@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   programs.tmux = {
-    enable = true;
+    # enable = true;
+    enable = false;
     baseIndex = 1;
     mouse = true;
     escapeTime = 0;
