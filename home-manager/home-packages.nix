@@ -22,7 +22,7 @@
     cliphist
     ffmpeg
     ffmpegthumbnailer
-    fzf
+    # fzf
     git-graph
     grimblast
     htop

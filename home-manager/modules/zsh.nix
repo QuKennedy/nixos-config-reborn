@@ -8,7 +8,12 @@
     shellAliases =
       let
         flakeDir = "~/flake";
+	modulesDir = "~/nixos-config-reborn/home-manager/modules";
       in {
+        lss = "ls -lhA --color";
+        top = "htop";
+	vrc = "nvim ${modulesDir}/zsh.nix";
+
         sw = "nh os switch";
         upd = "nh os switch --update";
         hms = "nh home switch";
