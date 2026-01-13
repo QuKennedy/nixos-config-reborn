@@ -21,39 +21,36 @@ in {
     bind = [
       "$mainMod,       T, exec, $terminal"
       "$mainMod,       Q, killactive,"
-      "$mainMod,       O, exit,"
+      # "$mainMod,       O, exit,"
       "$mainMod,       R, exec, $fileManager"
-      "$mainMod,       F, togglefloating,"
+      # "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu --show drun"
-      "$mainMod,       P, pin,"
-      "$mainMod,       J, togglesplit,"
-      "$mainMod,       E, exec, bemoji -cn"
+      # "$mainMod,       P, pin,"
+      # "$mainMod,       J, togglesplit,"
+      # "$mainMod,       E, exec, bemoji -cn"
       "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
-      "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
-      "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
-      "$mainMod,       L, exec, loginctl lock-session"
+      "$mainMod,       B, exec, brave"
+      # "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
+      # "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
+      "$mainMod SHIFT, X, exec, loginctl lock-session"
+      # "$mainMod,       L, exec, loginctl lock-session"
       "$mainMod,       P, exec, hyprpicker -an"
       "$mainMod,       N, exec, swaync-client -t"
       ", Print, exec, grimblast --notify --freeze copysave area"
       "$mainMod,       W, exec, ${booksScript}/bin/open_books"
 
       # Moving focus
-      "$mainMod, left, movefocus, l"
-      "$mainMod, right, movefocus, r"
-      "$mainMod, up, movefocus, u"
-      "$mainMod, down, movefocus, d"
+      "$mainMod, H, movefocus, l"
+      "$mainMod, L, movefocus, r"
+      "$mainMod, K, movefocus, u"
+      "$mainMod, J, movefocus, d"
 
       # Moving windows
-      "$mainMod SHIFT, left,  swapwindow, l"
-      "$mainMod SHIFT, right, swapwindow, r"
-      "$mainMod SHIFT, up,    swapwindow, u"
-      "$mainMod SHIFT, down,  swapwindow, d"
+      "$mainMod SHIFT, H,  swapwindow, l"
+      "$mainMod SHIFT, L, swapwindow, r"
+      "$mainMod SHIFT, K,    swapwindow, u"
+      "$mainMod SHIFT, J,  swapwindow, d"
 
-      # Resizeing windows                   X  Y
-      "$mainMod CTRL, left,  resizeactive, -60 0"
-      "$mainMod CTRL, right, resizeactive,  60 0"
-      "$mainMod CTRL, up,    resizeactive,  0 -60"
-      "$mainMod CTRL, down,  resizeactive,  0  60"
 
       # Switching workspaces
       "$mainMod, 1, workspace, 1"
@@ -90,14 +87,25 @@ in {
       "$mainMod, mouse:273, resizewindow"
     ];
 
+    # Allowing repeat
+    binde = [
+      # Resizeing windows           X  Y
+      "$mainMod, Y, resizeactive, -20 0"
+      "$mainMod, O, resizeactive,  20 0"
+      "$mainMod, I, resizeactive,  0 -20"
+      "$mainMod, U, resizeactive,  0  20"
+      "$mainMod, up, exec, playerctl --player spotify volume .01+"
+      "$mainMod, down, exec, playerctl --player spotify volume .01-"
+    ];
+
     # Laptop multimedia keys for volume and LCD brightness
     bindel = [
       ",XF86AudioRaiseVolume,  exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
       ",XF86AudioLowerVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
       ",XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
       ",XF86AudioMicMute,      exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-      "$mainMod, bracketright, exec, brightnessctl s 10%+"
-      "$mainMod, bracketleft,  exec, brightnessctl s 10%-"
+      # "$mainMod, bracketright, exec, brightnessctl s 10%+"
+      # "$mainMod, bracketleft,  exec, brightnessctl s 10%-"
     ];
 
     # Audio playback

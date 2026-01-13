@@ -14,6 +14,7 @@
         top = "htop";
 	vrc = "nvim ${modulesDir}/zsh.nix";
 	vm = "nvim ${modulesDir}";
+	vb = "nvim ${modulesDir}/hyprland/binds.nix";
 
         sw = "nh os switch";
         upd = "nh os switch --update";

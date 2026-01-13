@@ -10,6 +10,7 @@
     ./lazygit.nix
     ./neovim.nix
     ./ranger.nix
+    ./spicetify.nix
     ./starship.nix
     ./stylix.nix
     ./swaync

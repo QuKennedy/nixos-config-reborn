@@ -15,6 +15,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # https://gerg-l.github.io/spicetify-nix/usage.html
+    # https://github.com/search?q=lang%3Anix+inputs.nixpkgs.follows+gerg-l&type=code
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # COMING SOON...
     #nixvim = {
     #  url = "github:nix-community/nixvim";
