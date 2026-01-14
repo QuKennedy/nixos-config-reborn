@@ -16,6 +16,9 @@
     vesktop
 
     # CLI utils
+    grim
+    slurp
+    swappy
     bc
     bottom
     #brightnessctl
@@ -24,7 +27,7 @@
     ffmpegthumbnailer
     # fzf
     git-graph
-    grimblast
+    # grimblast
     htop
     hyprpicker
     ntfs3g

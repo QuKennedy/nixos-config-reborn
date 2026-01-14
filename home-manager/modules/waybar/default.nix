@@ -35,9 +35,9 @@
             "magic" = "";
 	    "urgent" = "";
           };
-	  # https://github.com/saylesss88/flaked/blob/6fb5e4c02617fa285525310892bad8a4bd4706ec/home/hypr/waybar.nix#L48
-	  on-scroll-up = "hyprctl dispatch workspace e+1";
-          on-scroll-down = "hyprctl dispatch workspace e-1";
+	  on-scroll-up = "hyprctl dispatch workspace -1";
+          on-scroll-down = "hyprctl dispatch workspace +1";
+	  # on-click-right = "alacritty -e btop";
 
           persistent-workspaces = {
             "*" = 10;
@@ -93,7 +93,7 @@
               warning = 70;
               critical = 90;
           };
-          on-click = "alacritty -e 'btop'"; 
+	  on-click = "$HOME/nixos-config-reborn/scripts/screenshot.sh";
         };
 
         "battery" = {

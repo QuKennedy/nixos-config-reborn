@@ -7,9 +7,11 @@
 
     shellAliases =
       let
+        nixDir = "~/nixos-config-reborn";
         flakeDir = "~/flake";
 	modulesDir = "~/nixos-config-reborn/home-manager/modules";
       in {
+        dj = "cd ${nixDir}" ;
         lss = "ls -lhA --color";
         top = "htop";
 	vrc = "nvim ${modulesDir}/zsh.nix";
