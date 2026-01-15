@@ -9,7 +9,9 @@
     ./git.nix
     ./hyprland
     ./lazygit.nix
-    ./neovim.nix
+    # See comment in neovim.nix file, this is no longer used but kept for now.
+    # ./neovim.nix
+    ./nvim
     ./ranger.nix
     ./spicetify.nix
     ./starship.nix

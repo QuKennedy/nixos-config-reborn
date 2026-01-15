@@ -14,27 +14,22 @@
         dj = "cd ${nixDir}" ;
         lss = "ls -lhA --color";
         top = "htop";
-	vrc = "nvim ${modulesDir}/zsh.nix";
-	vm = "nvim ${modulesDir}";
-	vbinds = "nvim ${modulesDir}/hyprland/binds.nix";
-	vbar = "nvim ${modulesDir}/waybar/default.nix";
-
+	vrc = "v ${modulesDir}/zsh.nix";
+	vm = "v ${modulesDir}";
+	vbinds = "v ${modulesDir}/hyprland/binds.nix";
+	vbar = "v ${modulesDir}/waybar/default.nix";
+        pkgs = "v ${flakeDir}/nixos/packages.nix";
         sw = "nh os switch";
         upd = "nh os switch --update";
         hms = "nh home switch";
-
-        pkgs = "nvim ${flakeDir}/nixos/packages.nix";
-
         r = "ranger";
-        v = "nvim";
+        # v = "nvim";
         se = "sudoedit";
         microfetch = "microfetch && echo";
-
         gs = "git status";
         ga = "git add";
         gc = "git commit";
         gp = "git push";
-
         ".." = "cd ..";
         "..." = "cd ../..";
         "...." = "cd ../../..";

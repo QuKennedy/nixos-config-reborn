@@ -4,6 +4,8 @@
   inputs = {
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixCats.url = "github:BirdeeHub/nixCats-nvim";
+
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";

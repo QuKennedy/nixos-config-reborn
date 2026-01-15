@@ -1,3 +1,4 @@
+# This is no longer necessary, but I'll keep it around for now. Using nixcats fully now.
 { pkgs, ... }: {
   programs.neovim = {
     enable = true;

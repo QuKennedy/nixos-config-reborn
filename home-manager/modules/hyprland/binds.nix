@@ -21,6 +21,7 @@ in {
     bind = [
       "$mainMod,       T, exec, $terminal"
       "$mainMod,       Q, killactive,"
+      "$mainMod,       F, fullscreen,"
       # "$mainMod,       O, exit,"
       "$mainMod,       R, exec, $fileManager"
       # "$mainMod,       F, togglefloating,"
