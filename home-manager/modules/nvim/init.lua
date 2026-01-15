@@ -138,6 +138,7 @@ require("snacks").setup({
   scope = {},
 })
 vim.keymap.set("n", "-", function() Snacks.explorer.open() end, { desc = 'Snacks Explorer' })
+-- TODO: make this keybind something maybe like leader t if that's not some easymotion
 vim.keymap.set("n", "<c-\\>", function() Snacks.terminal.open() end, { desc = 'Snacks Terminal' })
 vim.keymap.set("n", "<leader>_", function() Snacks.lazygit.open() end, { desc = 'Snacks LazyGit' })
 vim.keymap.set('n', "<leader>sf", function() Snacks.picker.smart() end, { desc = "Smart Find Files" })
