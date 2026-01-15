@@ -5,7 +5,7 @@
       window.opacity = 1.0;
 
       font = {
-        # TODO: Figure out the conflict here
+        # defined in stylix
         # size = 18;
         builtin_box_drawing = true;
         normal = {
