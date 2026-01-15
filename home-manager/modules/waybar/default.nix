@@ -10,7 +10,8 @@
         position = "bottom";
         height = 20;
         modules-left = ["hyprland/workspaces"];
-        modules-center = ["hyprland/window"];
+        # modules-center = ["hyprland/window"];
+        modules-center = ["mpris"];
         # modules-right = ["hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray"];
         modules-right = ["cpu" "memory" "custom/weather" "clock" "tray"];
         "hyprland/workspaces" = {
@@ -59,6 +60,28 @@
           class = "weather";
         };
 
+        "mpris" = {
+          player = "spotify";
+          # format = "{status_icon} - {title} - {position}/{length}";
+          format = "{status_icon} - {artist}: {title}";
+          tooltip-format = ''
+            {player}
+            status: {status_icon} {position}/{length}
+            title:  {title}
+            artist: {artist}
+            album:  {album}'';
+          status-icons = {
+            paused = "";
+            playing = "";
+            # stopped = "";
+          };
+          # title-len = 16;
+          interval = 1;
+          on-scroll-up = "playerctl previous";
+          on-scroll-down = "playerctl next";
+	  # align = 1;
+        };
+
         "pulseaudio" = {
           format = "{icon} {volume}%";
           format-bluetooth = "{icon} {volume}% ";
@@ -83,6 +106,7 @@
               critical = 90;
           };
           on-click = "alacritty -e 'btop'";
+	  max-length = "16";
 	};
 
         "memory" = {
