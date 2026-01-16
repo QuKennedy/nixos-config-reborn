@@ -6,6 +6,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
     catppuccin.url = "github:catppuccin/nix";
+    # TODO: add the jb in here like that github search result.
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
