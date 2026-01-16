@@ -29,6 +29,8 @@ window#waybar {
   margin: 0 10px;
 }
 
+/* TODO: maybe i keep the formatting here, but import the colors from stylix from the 16 colors they use. */
+/* https://github.com/suderman/nixos/blob/06181d3db01deab7ccf29cf7fcec58a2370910bf/modules/home/desktop/hyprland/waybar/style.css */
 #cpu {
   margin: 0;
   color: #d79921;

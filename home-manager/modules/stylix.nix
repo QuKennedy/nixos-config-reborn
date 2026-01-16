@@ -17,16 +17,29 @@
 
   stylix = {
     enable = true;
+    autoEnable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    # TODO: not sure if needed https://github.com/hmajid2301/nixicle/blob/14be6cffdea42ef58619b7fa9b10b1697ab96172/modules/home/styles/stylix/default.nix#L12
+    # Force base16 colors instead of extracting from image
+    override = {
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    };
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
     targets = {
-      neovim.enable = false;
       waybar.enable = false;
       wofi.enable = false;
       hyprland.enable = false;
       hyprlock.enable = false;
     };
+
+#    targets = {
+#      neovim.enable = true;
+#      waybar.enable = true;
+#      wofi.enable = true;
+#      hyprland.enable = true;
+#      hyprlock.enable = true;
+#    };
 
     cursor = {
       name = "DMZ-Black";
@@ -55,6 +68,7 @@
       sizes = {
         terminal = 16;
         applications = 12;
+        popups = 12;
       };
     };
 

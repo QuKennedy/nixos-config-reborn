@@ -19,6 +19,7 @@
 	vbinds = "v ${modulesDir}/hyprland/binds.nix";
 	vbar = "v ${modulesDir}/waybar/default.nix";
         pkgs = "v ${flakeDir}/nixos/packages.nix";
+        vflake = "v ${flakeDir}/nixos/flake.nix";
         sw = "nh os switch";
         upd = "nh os switch --update";
         hms = "nh home switch";

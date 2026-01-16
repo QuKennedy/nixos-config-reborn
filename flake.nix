@@ -5,7 +5,7 @@
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-
+    catppuccin.url = "github:catppuccin/nix";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
@@ -47,6 +47,8 @@
 
       modules = [
         ./hosts/${hostname}/configuration.nix
+        # https://journix.dev/posts/ricing-linux-has-never-been-easier-nixos-and-stylix/
+        # TODO: maybe do stylix here?
       ];
     };
 

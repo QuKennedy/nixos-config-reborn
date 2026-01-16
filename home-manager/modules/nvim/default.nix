@@ -67,6 +67,8 @@ in {
             lzextras
             snacks-nvim
             onedark-nvim
+            # TODO: this can probably come from home manager, just need to figure out the import path.
+            catppuccin-nvim
             vim-sleuth
           ];
         };
