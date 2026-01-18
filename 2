@@ -23,13 +23,8 @@
 
       exec-once = [
         "waybar"
-        "wl-paste --type text --watch cliphist store"
-        "wl-paste --type image --watch cliphist store"
-        "[workspace special:magic silent] alacritty -e btop"
-        "[workspace 1 silent] brave"
-        "[workspace 4 silent] alacritty -e v"
-        "[workspace 7 silent] spotify"
-        "[workspace 10 silent] vesktop"
+        # "wl-paste --type text --watch cliphist store"
+        # "wl-paste --type image --watch cliphist store"
       ];
 
       general = {
@@ -95,7 +90,7 @@
         disable_hyprland_logo = true;
       };
 
-      windowrule = [
+      windowrulev2 = [
         "bordersize 0, floating:0, onworkspace:w[t1]"
 
         "float,class:(mpv)|(imv)|(showmethekey-gtk)"
@@ -103,9 +98,11 @@
         "noborder,nofocus,class:(showmethekey-gtk)"
 
         # "workspace 3,class:(obsidian)"
-        # TODO set up vencord
-        "workspace 7,class:(spotify)"
-        "workspace 10,class:(vesktop)"
+        "workspace 3,class:(zathura)"
+        "workspace 4,class:(com.obsproject.Studio)"
+        "workspace 5,class:(telegram)"
+        "workspace 5,class:(vesktop)"
+        # "workspace 6,class:(teams-for-linux)"
 
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
@@ -121,7 +118,7 @@
       workspace = [
         "w[tv1], gapsout:0, gapsin:0"
         "f[1], gapsout:0, gapsin:0"
-        # "special:scratchpad, on-created-empty:alacritty"
+        "special:scratchpad, on-created-empty:alacritty"
       ];
     };
   };
