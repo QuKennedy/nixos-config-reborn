@@ -1,5 +1,4 @@
-{ inputs, ... }: {
-  imports = [ inputs.hyprland.homeManagerModules.default ];
+{
 # TODO     https://github.com/brycekormylo/dotfiles/blob/6b41cec8f4a0d3ddda89170ba1069371de73cb06/system/hyprland.nix#L54
   programs.hyprland = {
     enable = true;

@@ -56,7 +56,8 @@
     #libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
+    # TODO maybe this explains my dupe
+    # xdg-desktop-portal-hyprland
 
     # Other
     bemoji

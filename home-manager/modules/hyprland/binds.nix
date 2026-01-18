@@ -20,7 +20,8 @@ in {
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod,       T, exec, $terminal"
-      "$mainMod,       Q, killactive,"
+      "$mainMod,       W, killactive,"
+      "$mainMod,       TAB, workspace, previous"
       "$mainMod,       F, fullscreen,"
       # "$mainMod,       O, exit,"
       "$mainMod,       R, exec, $fileManager"
@@ -39,7 +40,6 @@ in {
       "$mainMod,       P, exec, hyprpicker -an"
       "$mainMod,       N, exec, swaync-client -t"
       ", Print, exec, grimblast --notify --freeze copysave area"
-      "$mainMod,       W, exec, ${booksScript}/bin/open_books"
 
       # Moving focus
       "$mainMod, H, movefocus, l"
