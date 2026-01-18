@@ -25,11 +25,14 @@
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
-        "[workspace special:magic silent] alacritty -e btop"
-        "[workspace 1 silent] brave"
-        "[workspace 4 silent] alacritty -e v"
-        "[workspace 7 silent] spotify"
+        "[workspace special:magic silent] alacritty --working-directory /home/beeper/nixos-config-reborn"
         "[workspace 10 silent] vesktop"
+        "[workspace 10 silent] brave --app=https://messages.google.com/web/conversations"
+        "[workspace 7 silent] spotify"
+        "[workspace 7 silent] brave --app=https://www.youtube.com/"
+        "[workspace 6 silent] alacritty --working-directory /home/beeper/nixos-config-reborn"
+        "[workspace 4 silent] alacritty -e v"
+        "[workspace 1 silent] brave"
       ];
 
       general = {
