@@ -34,6 +34,7 @@
         ".." = "cd ..";
         "..." = "cd ../..";
         "...." = "cd ../../..";
+        reboot-windows = "systemctl reboot --boot-loader-entry=windows_windows.conf";
       };
 
     history.size = 10000;
